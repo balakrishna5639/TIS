@@ -15,30 +15,49 @@ export const Testimonials = () => {
           </h3>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3].map((item, index) => (
-            <FadeIn key={item} delay={index * 0.1}>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl hover:bg-white/15 transition-colors">
-                <div className="flex gap-1 mb-6 text-primary">
-                  {[1, 2, 3, 4, 5].map(star => (
-                    <Star key={star} className="w-5 h-5 fill-current" />
-                  ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <FadeIn delay={0.1}>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl hover:bg-white/15 transition-colors h-full">
+              <div className="flex gap-1 mb-6 text-primary">
+                {[1, 2, 3, 4, 5].map(star => (
+                  <Star key={star} className="w-5 h-5 fill-current" />
+                ))}
+              </div>
+              <p className="text-white/90 text-lg italic mb-8 leading-relaxed">
+                “We feel supported in what we do and nudged further to do more. At Tulas, we believe in bringing out the best in every student—whether it’s academics, music, art, or drama. For us, school isn’t just about lessons, it’s about endless opportunities waiting to be explored.”
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-slate-300 overflow-hidden">
+                  <img src="https://i.pravatar.cc/150?img=1" alt="Parent" className="w-full h-full object-cover" />
                 </div>
-                <p className="text-white/90 text-lg italic mb-8 leading-relaxed">
-                  "TIS has been instrumental in shaping my child's future. The balance between academics and extracurricular activities is unparalleled."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-slate-300 overflow-hidden">
-                    <img src={`https://i.pravatar.cc/150?img=${index + 10}`} alt="Parent" className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-bold">Ravi Sharma</h4>
-                    <p className="text-white/60 text-sm">Parent of Class X Student</p>
-                  </div>
+                <div>
+                  <h4 className="font-heading font-bold">Happy Parent</h4>
+                  <p className="text-white/60 text-sm">TIS Community</p>
                 </div>
               </div>
-            </FadeIn>
-          ))}
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl hover:bg-white/15 transition-colors h-full">
+              <div className="flex gap-1 mb-6 text-primary">
+                {[1, 2, 3, 4, 5].map(star => (
+                  <Star key={star} className="w-5 h-5 fill-current" />
+                ))}
+              </div>
+              <p className="text-white/90 text-lg italic mb-8 leading-relaxed">
+                “Tulas helped me thrive and become the best version of myself. When you choose a school that chooses you, it becomes more than just a place to learn—it becomes a place to belong, grow, and shine.”
+              </p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-slate-300 overflow-hidden">
+                  <img src="https://i.pravatar.cc/150?img=5" alt="Student" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h4 className="font-heading font-bold">Proud Alumnus</h4>
+                  <p className="text-white/60 text-sm">TIS Graduate</p>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>

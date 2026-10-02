@@ -14,8 +14,8 @@ export const AboutSection = () => {
             <FadeIn direction="right">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Students studying"
+                  src="https://tis.edu.in/wp-content/uploads/2023/06/campus-view.jpg" 
+                  alt="TIS Campus"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-secondary/10" />

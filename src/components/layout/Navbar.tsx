@@ -26,14 +26,22 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
-        isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm py-4"
-          : "bg-transparent py-6"
-      )}
-    >
+    <>
+      {/* Top Bar */}
+      <div className="hidden md:flex w-full bg-slate-900 text-white/90 text-sm py-2 px-6 justify-end items-center gap-6 relative z-50">
+        <a href="tel:+91-9837983791" className="flex items-center gap-2 hover:text-primary transition-colors">
+          ADMISSIONS HELPLINE NO. +91-9837983791
+        </a>
+      </div>
+      
+      <header
+        className={cn(
+          "fixed left-0 right-0 z-40 transition-all duration-300",
+          isScrolled
+            ? "top-0 bg-white/80 backdrop-blur-md shadow-sm py-4"
+            : "top-0 md:top-9 bg-transparent py-6"
+        )}
+      >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="relative z-50">
           <motion.div
@@ -129,5 +137,6 @@ export const Navbar = () => {
         </AnimatePresence>
       </div>
     </header>
+    </>
   );
 };

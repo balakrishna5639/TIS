@@ -1,24 +1,24 @@
 import { FadeIn } from "@/components/animation/FadeIn";
-import { ArrowRight, Globe, Microscope, Palette } from "lucide-react";
+import { ArrowRight, Trophy, BookOpen, HeartPulse } from "lucide-react";
 
 const PROGRAMS = [
   {
-    title: "Global Exposure",
-    description: "Exchange programs and international collaborations to foster a global perspective.",
-    icon: <Globe className="w-8 h-8 text-white" />,
+    title: "Modern Gurukul",
+    description: "Our CBSE curriculum focuses on academic excellence, holistic development, and preparing students to be global leaders.",
+    icon: <BookOpen className="w-8 h-8 text-white" />,
     bgClass: "bg-blue-600",
   },
   {
-    title: "STEM Innovation",
-    description: "Advanced robotics, AI labs, and experimental science centers.",
-    icon: <Microscope className="w-8 h-8 text-white" />,
+    title: "16+ World-Class Sports",
+    description: "It's not just a facility, it's the foundation! Archery, Swimming, Karate, Polo, and more curated for joy and discipline.",
+    icon: <Trophy className="w-8 h-8 text-white" />,
     bgClass: "bg-primary",
   },
   {
-    title: "Creative Arts",
-    description: "Comprehensive visual and performing arts curriculum to nurture creativity.",
-    icon: <Palette className="w-8 h-8 text-white" />,
-    bgClass: "bg-purple-600",
+    title: "Holistic Development",
+    description: "We provide world-class education, modern facilities, and a nurturing environment for students to thrive socially and culturally.",
+    icon: <HeartPulse className="w-8 h-8 text-white" />,
+    bgClass: "bg-[#007A83]",
   },
 ];
 

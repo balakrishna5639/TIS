@@ -40,7 +40,7 @@ export const FadeIn = ({
       }}
       viewport={{ once: true, margin: "-10%" }}
       transition={{
-        duration: 0.7,
+        duration: 0.5,
         ease: [0.25, 0.1, 0.25, 1],
         delay: delay,
       }}

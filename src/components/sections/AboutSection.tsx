@@ -1,80 +1,56 @@
 import { FadeIn } from "@/components/animation/FadeIn";
-import { BookOpen, Trophy, Users } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
-      {/* Abstract Background Element */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50 -skew-x-12 translate-x-1/4 z-0" />
+    <section id="about" className="py-32 bg-[#F8FAFC] relative overflow-hidden">
+      {/* Subtle Background Element */}
+      <div className="absolute top-0 right-0 w-[80%] h-full bg-white -skew-x-12 translate-x-1/3 z-0 shadow-sm" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           <div className="order-2 lg:order-1 relative">
             <FadeIn direction="right">
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
+              {/* Clean Image Composition */}
+              <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-xl border-[6px] border-white">
                 <img 
-                  src="https://tis.edu.in/wp-content/uploads/2023/06/campus-view.jpg" 
+                  src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1776&auto=format&fit=crop" 
                   alt="TIS Campus"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-secondary/10" />
-              </div>
-              
-              {/* Floating Stat Card */}
-              <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl border border-slate-100 max-w-xs">
-                <div className="text-4xl font-heading font-bold text-primary mb-2">20+</div>
-                <div className="text-slate-600 font-medium leading-tight">Years of academic excellence and holistic development.</div>
               </div>
             </FadeIn>
           </div>
 
           <div className="order-1 lg:order-2 space-y-8">
             <FadeIn>
-              <h2 className="text-primary font-semibold tracking-wider uppercase text-sm mb-2">About TIS</h2>
-              <h3 className="text-4xl md:text-5xl font-heading font-bold text-slate-900 leading-[1.2]">
-                A Legacy of Excellence in Education
+              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-2">
+                <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Welcome to Tulas</h2>
+              </div>
+              <h3 className="text-5xl md:text-6xl font-heading font-black text-slate-900 leading-[1.1] tracking-tight">
+                MADE FOR <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#ff4d6d]">THE FUTURE</span>
               </h3>
             </FadeIn>
             
             <FadeIn delay={0.1}>
-              <p className="text-slate-600 text-lg leading-relaxed">
-                Tula's International School stands as a beacon of modern education infused with deep-rooted traditional values. Ranked among the top boarding schools in India, we provide a nurturing environment where students discover their true potential.
+              <p className="text-slate-600 text-xl leading-relaxed font-medium">
+                Tula's International School stands as a beacon of modern education infused with deep-rooted traditional values. We provide a nurturing environment where students discover their true potential and prepare for a globalized world.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <BookOpen className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-bold text-slate-900 text-lg">CBSE Curriculum</h4>
-                    <p className="text-slate-500 text-sm mt-1">Rigorous academic framework designed for global readiness.</p>
-                  </div>
-                </div>
-                
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-                    <Trophy className="w-6 h-6 text-secondary-light" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-bold text-slate-900 text-lg">Sports Excellence</h4>
-                    <p className="text-slate-500 text-sm mt-1">World-class facilities for physical and mental development.</p>
-                  </div>
-                </div>
-                
-                <div className="flex gap-4 sm:col-span-2">
-                  <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-                    <Users className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-bold text-slate-900 text-lg">Expert Faculty</h4>
-                    <p className="text-slate-500 text-sm mt-1">Dedicated mentors fostering intellectual curiosity and character.</p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-slate-500 text-lg leading-relaxed">
+                By combining a rigorous academic curriculum with world-class infrastructure, we ensure that every student receives personalized attention and holistic development. At Tulas, education is not just about academics; it's about building character, discipline, and lifelong leadership skills.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              <button className="px-8 py-4 mt-4 border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white rounded-full font-bold transition-colors duration-300 flex items-center gap-2 group">
+                Discover Our Heritage
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </FadeIn>
           </div>
         </div>
